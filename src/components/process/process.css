@@ -1,0 +1,802 @@
+.process__container {
+    height: 618px;
+    background: var(--secondary-color);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.process__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    align-self: flex-start;
+}
+
+.process__header-text {
+    font-size: 16px;
+    line-height: 17.6px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+/* Process Main Starts */
+
+.process__main-container {
+    position: relative;
+    width: fit-content;
+}
+
+.process__main-container img {
+    position: relative;
+    width: 1200px;
+    top: -28%;
+    left: 7.5%;
+}
+
+.process__desc {
+    display: flex;
+    position: absolute;
+}
+
+.desc-nakup {
+    position: absolute;
+    left: 55px;
+    top: -40px;
+}
+
+.process__description {
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.process__desc.nakup {
+    top: 140px;
+    left: 430px;
+}
+
+.process__desc.ponudba {
+    top: 200px;
+    left: 312px;
+}
+
+.process__desc.nabor {
+    top: 477px;
+    left: 195px;
+}
+
+.desc-nabor {
+    position: absolute;
+    left: 55px;
+    top: -20px;
+}
+
+.process__desc.povprasevanje {
+    top: 408px;
+    left: 310px;
+}
+
+.process__desc.proces {
+    top: 404px;
+    left: 473px;
+}
+
+.process__desc.analiza {
+    top: 338px;
+    left: 590px;
+}
+
+.process__desc.pregled {
+    top: 270px;
+    left: 703px;
+}
+
+.process__desc.dobava {
+    top: 203px;
+    left: 821px;
+}
+
+.process__desc.testiranje {
+    top: 136px;
+    left: 940px;
+}
+
+.process__desc.nakup-2 {
+    top: 65px;
+    left: 1062px;
+}
+
+.process__desc.podpora {
+    top: -3px;
+    left: 1180px;
+}
+
+.process__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.process__vertical-line {
+    position: relative;
+    width: 87.47px;
+    height: 0px;
+    border: 1px solid #434A8D;
+    transform: rotate(-90deg);
+}
+
+
+@keyframes lineAnimation {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.process__vertical-line::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #434A8D;
+    animation: lineAnimation 4s infinite;
+}
+/* Process Main Ends */
+
+
+
+.process__sub-text {
+    font-size: 18px;
+    line-height: 21.6px;
+    font-weight: 400;
+    color: var(--primary-color);
+    max-width: 457px;
+}
+
+.process__sub {
+    position: absolute;
+    bottom: 0;
+    align-self: flex-end;
+    padding: 5rem 7rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1350px) {
+    .process__main-container img {
+        width: 1000px;
+        top: -30%;
+        left: 0;
+    }
+
+    .process__description {
+        font-size: 16px;
+        line-height: 19.2px;
+    }
+    
+    .process__desc.nakup {
+        top: 100px;
+        left: 276px;
+    }
+    
+    .process__desc.ponudba {
+        top: 150px;
+        left: 178px;
+    }
+    
+    .process__desc.nabor {
+        top: 392px;
+        left: 80px;
+    }
+    
+    .desc-nabor {
+        position: absolute;
+        left: 55px;
+        top: -20px;
+    }
+    
+    .process__desc.povprasevanje {
+        top: 335px;
+        left: 177px;
+    }
+    
+    .process__desc.proces {
+        top: 333px;
+        left: 311px;
+    }
+    
+    .process__desc.analiza {
+        top: 277px;
+        left: 407px;
+    }
+    
+    .process__desc.pregled {
+        top: 221px;
+        left: 505px;
+    }
+    
+    .process__desc.dobava {
+        top: 165px;
+        left: 603px;
+    }
+    
+    .process__desc.testiranje {
+        top: 109px;
+        left: 701px;
+    }
+    
+    .process__desc.nakup-2 {
+        top: 51px;
+        left: 802px;
+    }
+    
+    .process__desc.podpora {
+        top: -7px;
+        left: 900px;
+    }
+
+    .process__sub {
+        padding: 2rem 3rem;
+    }
+    
+    .process__sub-text {
+        font-size: 18px;
+        line-height: 21.6px;
+        font-weight: 400;
+        color: var(--primary-color);
+        max-width: 457px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .process__main-container {
+        
+        left: -5%;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    .process__main-container img {
+        width: 800px;
+        top: -50.5%;
+        left: 2%;
+    }
+
+    .process__description {
+        font-size: 13px;
+        line-height: 19.2px;
+    }
+    
+    .process__desc.nakup {
+        top: -28px;
+        left: 228px;
+    }
+    
+    .process__desc.ponudba {
+        top: 18px;
+        left: 150px;
+    }
+    
+    .process__desc.nabor {
+        top: 228px;
+        left: 71px;
+    }
+
+    .desc-nabor-main {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .process__desc.povprasevanje {
+        top: 181px;
+        left: 149px;
+    }
+    
+    .process__desc.proces {
+        top: 180px;
+        left: 256px;
+    }
+    
+    .process__desc.analiza {
+        top: 136px;
+        left: 334px;
+    }
+    
+    .process__desc.pregled {
+        top: 90px;
+        left: 411px;
+    }
+    
+    .process__desc.dobava {
+        top: 45px;
+        left: 491px;
+    }
+    
+    .process__desc.testiranje {
+        top: 0;
+        left: 568px;
+    }
+    
+    .process__desc.nakup-2 {
+        top: -46px;
+        left: 649px;
+    }
+    
+    .process__desc.podpora {
+        top: -93px;
+        left: 728px;
+    }
+
+    .process__sub {
+        padding: 3rem 5rem;
+    }
+    
+    .process__sub-text {
+        font-size: 16px;
+        line-height: 18.6px;
+        font-weight: 400;
+        color: var(--primary-color);
+        max-width: 457px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .process__main-container img {
+        width: 600px;
+        top: -64.5%;
+        left: 7%;
+    }
+
+    .process__description {
+        font-size: 10px;
+        line-height: 12.2px;
+    }
+    
+    .process__desc.nakup {
+        top: -82px;
+        left: 190px;
+    }
+    
+    .process__desc.ponudba {
+        top: -48px;
+        left: 131px;
+    }
+    
+    .process__desc.nabor {
+        top: 130px;
+        left: 71px;
+    }
+
+    .desc-nabor-main {
+        font-size: 10px;
+        line-height: 12px;
+        top: 30%;
+    }
+
+    .process__desc.povprasevanje {
+        top: 97px;
+        left: 131px;
+    }
+    
+    .process__desc.proces {
+        top: 95px;
+        left: 211px;
+    }
+    
+    .process__desc.analiza {
+        top: 62px;
+        left: 269px;
+    }
+    
+    .process__desc.pregled {
+        top: 28px;
+        left: 327px;
+    }
+    
+    .process__desc.dobava {
+        top: -5px;
+        left: 387px;
+    }
+    
+    .process__desc.testiranje {
+        top: -40px;
+        left: 444px;
+    }
+    
+    .process__desc.nakup-2 {
+        top: -75px;
+        left: 506px;
+    }
+    
+    .process__desc.podpora {
+        top: -108px;
+        left: 565px;
+    }
+
+    .process__sub {
+        padding: 3rem 5rem;
+    }
+}
+
+
+@media screen and (max-width: 648px) {
+    .process__main-container img {
+        width: 450px;
+        top: -100.5%;
+        left: 8%;
+    }
+
+    .process__desc {
+        display: flex;
+        position: absolute;
+    }
+    
+    .desc-nakup {
+        position: absolute;
+        left: 35px;
+        top: -20px;
+    }
+    
+    .process__vertical-line {
+        width: 60px;
+    }
+
+    .process__description {
+        font-size: 10px;
+        line-height: 12.2px;
+    }
+    
+    .process__desc.nakup {
+        top: -155px;
+        left: 150px;
+    }
+    
+    .process__desc.ponudba {
+        top: -130px;
+        left: 105px;
+    }
+    
+    .process__desc.nabor {
+        top: 1px;
+        left: 62px;
+    }
+
+    .desc-nabor {
+        left: 35px;
+    }
+
+    .desc-nabor-main {
+        font-size: 10px;
+        line-height: 12px;
+        top: 40px;
+        left: 0;
+    }
+
+    .desc-pocprasevanje-main {
+        font-size: 10px;
+        top: 40px;
+        left: 0;
+    }
+
+    .process__desc.povprasevanje {
+        top: -26px;
+        left: 105px;
+    }
+    
+    .process__desc.proces {
+        top: -28px;
+        left: 165px;
+    }
+
+    .desc-proces-main {
+        top: 10px;
+    }
+    
+    .process__desc.analiza {
+        top: -52px;
+        left: 209px;
+    }
+    
+    .process__desc.pregled {
+        top: -77px;
+        left: 252px;
+    }
+    
+    .process__desc.dobava {
+        top: -103px;
+        left: 297px;
+    }
+    
+    .process__desc.testiranje {
+        top: -127px;
+        left: 340px;
+    }
+    
+    .process__desc.nakup-2 {
+        top: -154px;
+        left: 386px;
+    }
+    
+    .process__desc.podpora {
+        top: -181px;
+        left: 430px;
+    }
+
+    .process__sub {
+        align-self: flex-end;
+        padding: 2rem 1rem;
+    }
+    
+    .process__sub-text {
+        font-size: 12px;
+        line-height: 14.6px;
+        font-weight: 400;
+        color: var(--primary-color);
+        max-width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .process__main-container img {
+        width: 350px;
+        top: -120.5%;
+        left: 3%;
+    }
+
+    .desc-nakup {
+        position: absolute;
+        left: 15px;
+        top: -40px;
+    }
+    
+    .process__vertical-line {
+        width: 40px;
+    }
+
+    .process__description {
+        font-size: 8px;
+        line-height: 12.2px;
+    }
+    
+    .process__desc.nakup {
+        top: -163px;
+        left: 102px;
+    }
+    
+    .process__desc.ponudba {
+        top: -144px;
+        left: 68px;
+    }
+    
+    .process__desc.nabor {
+        top: -44px;
+        left: 34px;
+    }
+
+    .desc-nabor {
+        left: 35px;
+    }
+
+    .desc-nabor-main {
+        font-size: 10px;
+        line-height: 12px;
+        top: 30px;
+        left: 0;
+    }
+
+    .desc-pocprasevanje-main {
+        font-size: 10px;
+        top: 30px;
+        left: -5px;
+    }
+
+    .process__desc.povprasevanje {
+        top: -65px;
+        left: 67px;
+    }
+    
+    .process__desc.proces {
+        top: -66px;
+        left: 115px;
+    }
+
+    .desc-proces-main {
+        top: 17px;
+        left: 25px;
+        line-height: 10px;
+    }
+    
+    .process__desc.analiza {
+        top: -85px;
+        left: 149px;
+    }
+    
+    .process__desc.pregled {
+        top: -105px;
+        left: 182px;
+    }
+    
+    .process__desc.dobava {
+        top: -125px;
+        left: 217px;
+    }
+
+    .desc-proces-main-sm {
+        top: 5px;
+        left: 25px;
+        line-height: 10px;
+    }
+    
+    .process__desc.testiranje {
+        top: -144px;
+        left: 251px;
+    }
+    
+    .process__desc.nakup-2 {
+        top: -165px;
+        left: 287px;
+    }
+    
+    .process__desc.podpora {
+        top: -185px;
+        left: 322px;
+    }
+
+    .process__sub {
+        align-self: flex-end;
+        padding: 1rem 2rem;
+    }
+    
+    .process__sub-text {
+        font-size: 12px;
+        line-height: 14.6px;
+        font-weight: 400;
+        color: var(--primary-color);
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .process__main-container img {
+        width: 270px;
+        top: -170.5%;
+        left: 0;
+    }
+
+    .desc-nakup {
+        position: absolute;
+        left: 15px;
+        top: -40px;
+    }
+    
+    .process__vertical-line {
+        width: 55px;
+    }
+
+    .process__description {
+        font-size: 6px;
+        line-height: 9.2px;
+    }
+    
+    .process__desc.nakup {
+        top: -223px;
+        left: 56px;
+    }
+    
+    .process__desc.ponudba {
+        top: -209px;
+        left: 30px;
+    }
+    
+    .process__desc.nabor {
+        top: -103px;
+        left: 5px;
+    }
+
+    .desc-nabor {
+        left: 35px;
+    }
+
+    .desc-nabor-main {
+        font-size: 10px;
+        line-height: 12px;
+        top: 30px;
+        left: 12px;
+    }
+
+    .desc-pocprasevanje-main {
+        font-size: 8px;
+        top: 30px;
+        left: 10px;
+    }
+
+    .process__desc.povprasevanje {
+        top: -119px;
+        left: 31px;
+    }
+    
+    .process__desc.proces {
+        top: -120px;
+        left: 68px;
+    }
+
+    .desc-proces-main {
+        top: 17px;
+        left: 35px;
+        line-height: 10px;
+    }
+    
+    .process__desc.analiza {
+        top: -135px;
+        left: 94px;
+    }
+    
+    .process__desc.pregled {
+        top: -150px;
+        left: 120px;
+    }
+    
+    .process__desc.dobava {
+        top: -166px;
+        left: 146px;
+    }
+
+    .desc-proces-main-sm {
+        top: 5px;
+        left: 32px;
+        line-height: 9.2px;
+    }
+    
+    .process__desc.testiranje {
+        top: -182px;
+        left: 172px;
+    }
+    
+    .process__desc.nakup-2 {
+        top: -197px;
+        left: 200px;
+    }
+    
+    .process__desc.podpora {
+        top: -211px;
+        left: 227px;
+    }
+
+    .process__sub {
+        align-self: flex-end;
+        padding: 0.5rem;
+    }
+    
+    .process__sub-text {
+        font-size: 10px;
+        line-height: 12.6px;
+        font-weight: 400;
+        color: var(--primary-color);
+        max-width: 500px;
+    }
+}
